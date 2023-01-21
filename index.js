@@ -16,7 +16,7 @@ const bcrypt = require('bcrypt')
 // })
 
 const connection = mysql.createConnection({
-    host: 'localhost',
+    host: 'mydb.cu6unrorcuye.us-east-1.rds.amazonaws.com',
     user: 'root',
     password: '12jack@@',
     database: 'saimon',
