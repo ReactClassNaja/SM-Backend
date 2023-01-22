@@ -163,7 +163,7 @@ app.post('/isLoggedIn', (req, res) => {
     if (req.cookies.login) {
         let data = {
             status: 200,
-            message: 'Logged In'
+            message: 'Log In'
         }
         res.send(data)
     } else {
