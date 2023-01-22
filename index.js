@@ -25,7 +25,7 @@ const connection = mysql.createConnection({
 connection.connect();
 
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'https://sm-frontend-seven.vercel.app',
     OptionsSUccessStatus: 200,
     credentials: true
 };
