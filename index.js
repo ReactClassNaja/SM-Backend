@@ -55,6 +55,10 @@ app.use(bodyParser.json())
 // });
 
 app.get('/', (req, res) => {
+    res.send("Haro- Warudo-")
+})
+
+app.get('/gets', (req, res) => {
     var sql = 'SELECT id, username FROM user'
     // var sql = "INSERT INTO user (username, password) VALUES('anny', 1234)"
     connection.query(sql, (err, rows, fields) => {
