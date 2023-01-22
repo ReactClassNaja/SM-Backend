@@ -125,6 +125,9 @@ app.post('/login', (req, res) => {
             if (rows.length > 0) {
                 res.cookie("login", rows[0].id)
                 let data = {
+                    path: '/',
+                    samSite: 'none',
+                    secure: true,
                     status: 200,
                     message: 'Log In'
                 }
