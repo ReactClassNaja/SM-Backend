@@ -123,11 +123,12 @@ app.post('/login', (req, res) => {
             throw err
         } else {
             if (rows.length > 0) {
-                res.cookie("login", rows[0].id)
-                let data = {
+                res.cookie("login", rows[0].id ,{
                     path: '/',
                     samSite: 'none',
                     secure: true,
+                })
+                let data = {
                     status: 200,
                     message: 'Log In'
                 }
