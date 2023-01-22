@@ -25,7 +25,8 @@ const connection = mysql.createConnection({
 connection.connect();
 
 const corsOptions = {
-    origin: 'https://sm-frontend-seven.vercel.app',
+    // origin: 'https://sm-frontend-seven.vercel.app',
+    origin: 'https://wannabedev.me',
     OptionsSUccessStatus: 200,
     credentials: true
 };
